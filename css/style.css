@@ -1,0 +1,21 @@
+@import url(https://db.onlinewebfonts.com/c/9ff57e16737552a50301198eaae83cfb?family=MullerLight);
+@import url(https://db.onlinewebfonts.com/c/9ff57e16737552a50301198eaae83cfb?family=MullerLight);
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./header.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+body{
+    background-color: rgba(195, 185, 185, 0.999);
+}
+h1, h2{
+    font-family: "EB Garamond", serif;
+}
+a{
+    text-decoration: none;
+}

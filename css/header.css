@@ -1,0 +1,54 @@
+.header-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+.navbar-toggler{
+    border: none;
+    padding: 0;
+}
+.logo{
+    width: 60px;
+    height: 30px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.phone-number .fa-solid{
+    color: #7e7c79;
+}
+.phone-number span{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #252525;
+    font-family: "Myriad Pro";
+    margin-left: 5px;
+}
+.header-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header-blue-block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(22, 35, 55, 0.93);
+    z-index: 2;
+}
+.blue-block-content{
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
