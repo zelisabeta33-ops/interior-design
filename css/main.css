@@ -1,0 +1,154 @@
+.intro{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 130px 0;
+}
+.intro .intro-item:nth-child(even){
+    margin-top: 230px;
+}
+.intro-item span{
+    font-size: 85px;
+    letter-spacing: 1px;
+    color: #fde3c9;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    margin-bottom: 20px;
+}
+.common-h4{
+    font-size: 22px;
+    font-weight: 600;
+}
+.common-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.common-title{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 55px;
+}
+.portfolio-list{
+    display: flex;
+    gap: 55px;
+    padding: 0;
+    margin-bottom: 45px;
+}
+.portfolio-list li{
+    font-weight: 500;
+    font-size: 18px;
+    color: #838383;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.portfolio-list li.active, .portfolio-list li:hover{
+    color: black;
+    border-bottom: 2px solid #b0b0b0;
+    padding-bottom: 5px;
+}
+
+.portfolio-gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    overflow: hidden;
+}
+.portfolio-item{
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    transition: transform 0.5s ease;
+}
+.portfolio-item:hover{
+    transform: scale(1.15);
+    z-index: 10;
+}
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 25px;
+}
+.portfolio-content.blue{
+    background-color: #1a2c3dd2;
+}
+.portfolio-content h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.portfolio-content span{
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.portfolio-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.portfolio-hover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio-hover-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.portfolio-hover-btn button{
+    border-radius: 50%;
+    color: white;
+    width: 85px;
+    height: 85px;
+    border: none;
+    background-color: #fcbc84f7;
+    font-size: 52px;
+    font-weight: 200;
+}
+.portfolio-item:hover .portfolio-hover{
+    opacity: 1;
+}
+
+.service{
+    padding: 135px 0;
+}
+.service-item:not(:last-child){
+    margin-bottom: 70px;
+}
+.service-item p{
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.service .active, .service-item p:hover{
+    color: black;
+    transform: translateX(30px);
+    font-weight: 600;
+}
+.service-block{
+    display: flex;
+    justify-content: space-between;
+}
