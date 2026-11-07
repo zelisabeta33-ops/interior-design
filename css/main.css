@@ -154,8 +154,6 @@
 .service-content img{
     width: 100%;
     height: 100%;
-    position: relative;
-    z-index: 5;
 }
 .service-block{
     display: flex;
@@ -209,8 +207,6 @@
     align-items: center;
     gap: 30px;
     color: white;
-    position: relative;
-    z-index: 5;
 }
 .video-btn{
     width: 85px;
@@ -277,7 +273,6 @@
     background-color: #182c3d;
     padding: 45px 0;
     position: relative;
-    z-index: 5;
 }
 .contact-img-bg{
     background: url(../img/kitchen2.jpg);
@@ -332,4 +327,64 @@
     font-size: 16px;
     font-weight: 800;
     margin-top: 33px;
+}
+
+.testimonials{
+    padding: 155px 0 245px;
+}
+.testimonial-title{
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Raleway", sans-serif;
+}
+.testimonial-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+.avatar-item{
+    position: relative;
+    width: 205px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-avatar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+.clean{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+.avatar-item:hover .clean{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.03);
+}
+.testimonial-content{
+    max-width: 700px;
+    background-color: white;
+    padding: 50px 70px;
+    position: relative;
+}
+.testimonial-content .common-subtitle{
+    margin-top: 20px;
+}
+.testimonial-content span{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #efb172;
+    font-weight: 700;
+}
+.testimonial-content .avatar-item{
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    transform: translateY(-50%);
 }

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(./header.css);
 @import url(./main.css);
+@import url(./footer.css);
 
 
 *{
@@ -14,8 +15,13 @@
 body{
     background-color: #fdfaf3;
 }
+main, footer{
+    position: relative;
+    z-index: 10;
+}
 h1, h2{
     font-family: "EB Garamond", serif;
+    color: #00203a;
 }
 p{
     letter-spacing: 1px;
@@ -47,4 +53,22 @@ ul, ol{
     border-right: 1px solid rgba(71, 71, 71, 0.1);
     border-left: 1px solid rgba(71, 71, 71, 0.1);
     height: 100%;
+}
+
+
+@media (max-width: 768px){
+    .site-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .common-h3{
+        font-size: 24px;
+    }
+    .common-subtitle{
+        font-size: 18px;
+    }
+    
+    .service-bar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
