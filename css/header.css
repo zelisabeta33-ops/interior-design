@@ -44,11 +44,42 @@
     z-index: 2;
 }
 .blue-block-content{
-    color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    z-index: 10;
+    color: white;
+    z-index: 3;
+    margin-left: 45px;
+}
+.blue-block-content h1{
+    font-size: 61px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.blue-block-content p{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300;
+}
+.header-btn{
+    width: 277px;
+    height: 56px;
+    filter: drop-shadow(4.5px 7.794px 14.5px rgba(0,1,6,0.06));
+    background-color: #f8a25a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Garamond";
+}
+.arrow{
+    font-size: 30px;
+    padding-left: 5px;
 }

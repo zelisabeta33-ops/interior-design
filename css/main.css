@@ -1,7 +1,6 @@
 .intro{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
     padding: 130px 0;
 }
 .intro .intro-item:nth-child(even){
@@ -50,8 +49,7 @@
 }
 
 .portfolio-gallery{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     color: white;
     overflow: hidden;
 }
@@ -59,11 +57,8 @@
     position: relative;
     width: 100%;
     min-height: 550px;
-    transition: transform 0.5s ease;
-}
-.portfolio-item:hover{
-    transform: scale(1.15);
-    z-index: 10;
+    flex: 1;
+    overflow: hidden;
 }
 .portfolio-item img{
     width: 100%;
@@ -129,6 +124,12 @@
 }
 .portfolio-item:hover .portfolio-hover{
     opacity: 1;
+}
+.portfolio-gallery:hover .portfolio-item{
+    flex: 0.8;
+}
+.portfolio-gallery .portfolio-item:hover{
+    flex: 1.6;
 }
 
 .service{
