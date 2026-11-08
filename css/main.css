@@ -3,6 +3,9 @@
     grid-template-columns: repeat(4, 1fr);
     padding: 130px 0;
 }
+.intro-item{
+    padding-right: 30px;
+}
 .intro .intro-item:nth-child(even){
     margin-top: 230px;
 }
@@ -12,7 +15,9 @@
     color: #fde3c9;
     font-weight: 700;
     font-family: "Playfair Display";
-    margin-bottom: 20px;
+    display: inline-block;
+    line-height: 0.9;
+    margin-bottom: 25px;
 }
 .common-h3{
     font-size: 22px;
@@ -24,6 +29,7 @@
     margin-top: 30px;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Potfolio !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .common-title{
     font-size: 45px;
     font-weight: 600;
@@ -57,7 +63,6 @@
     position: relative;
     width: 100%;
     min-height: 550px;
-    flex: 1;
     overflow: hidden;
 }
 .portfolio-item img{
@@ -132,6 +137,7 @@
     flex: 1.6;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Service !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .service{
     padding: 135px 0;
 }
@@ -159,7 +165,7 @@
 .service-block{
     display: flex;
     justify-content: space-between;
-    gap: 125px;
+    gap: 80px;
     margin-top: 55px;
 }
 .service-block h3{
@@ -179,7 +185,7 @@
 .service-block2 span{
     font-size: 18px;
     font-weight: 400;
-    color: #5e5e5e;
+    color: #182c3d;
 }
 .service-block2 button{
     font-size: 15px;
@@ -196,11 +202,12 @@
     margin-top: 70px;
 }
 
-
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Video !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .video-block{
     background-image: url(../img/Слой\ 14.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     padding: 230px 0;
     display: flex;
     flex-direction: column;
@@ -222,17 +229,25 @@
 }
 .video-block span{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
+    text-align: center;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Work !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .work{
     padding: 140px 0;
+}
+.work-block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
 }
 .work-item{
     display: flex;
     gap: 40px;
     padding-top: 15px;
     padding-left: 25px;
+    padding: 15px 40px 0 25px;
 }
 .work-number{
     width: 20px;
