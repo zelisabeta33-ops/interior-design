@@ -63,6 +63,57 @@ ul, ol{
     .site-grid{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .header{
+        background-image: url(../img/bg1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 600px;
+    }
+    .logo{
+        padding-left: 12px;
+        order: 1;
+    }
+    .navbar{
+        order: 2;
+        width: auto;
+    }
+    .phone-number{
+        display: none;
+    }
+    .header-bg{
+        display: none;
+    }
+    .header-blue-block{
+        width: 100%;
+        background-color: rgba(22, 35, 55, 0.85);
+        bottom: 0;
+    }
+    .blue-block-content{
+        width: 100%;
+        left: 0;
+        top: 50%;
+        bottom: 0;
+        transform: translateY(-50%);
+        align-items: center;
+        text-align: center;
+    }
+    .header-text{
+        padding-left: 0;
+    }
+    .header-btn{
+        margin: 0 auto;
+        width: 200px;
+    }
+    .blue-block-content .socials{
+        display: none;
+    }
+    .arrow{
+        position: absolute;
+        bottom: -70px;
+        transform: rotate(90deg);
+    }
+
     .intro{
         grid-template-columns: repeat(2, 1fr);
         padding: 95px 0;
@@ -347,10 +398,10 @@ ul, ol{
     .footer-item{
         order: 2;
     }
-    .footer-socials{
+    .socials{
         gap: 60px;
     }
-    .footer-socials a{
+    .socials a{
         height: 25px;
         width: 39px;
     }
