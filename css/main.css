@@ -140,6 +140,7 @@
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Service !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .service{
     padding: 135px 0;
+    position: relative;
 }
 .service-item:not(:last-child){
     margin-bottom: 70px;
@@ -161,6 +162,8 @@
 .service-content img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 .service-block{
     display: flex;
@@ -200,6 +203,12 @@
     background-color: transparent;
     border: 1px solid black;
     margin-top: 70px;
+    transition: all 0.3s ease;
+}
+.service-block2 button:hover{
+    background-color: #f8a25a;
+    color: white;
+    border: none;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Video !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -222,6 +231,11 @@
     border-radius: 50%;
     border: none;
     background-color: #f2b47c;
+    transition: transform 0.3s ease;
+}
+.video-btn:hover{
+    border: 1px solid white;
+    transform: scale(1.03);
 }
 .fa-solid{
     font-size: 20px;
@@ -285,9 +299,10 @@
     margin-top: 20px;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Contact !!!!!!!!!!!!!!!!!!!!!!!!!! */
 .contact-bg{
     background-color: #182c3d;
-    padding: 45px 0;
+    padding: 50px 0;
     position: relative;
 }
 .contact-img-bg{
@@ -320,6 +335,7 @@
     border-radius: 0;
     color: white;
     padding: 15px 0;
+    font-size: 15px;
 }
 .custom-input:focus{
     background-color: transparent;
@@ -343,10 +359,34 @@
     font-size: 16px;
     font-weight: 800;
     margin-top: 33px;
+    transition: all 0.3s ease;
+}
+.form-btn:hover{
+    background-color: #f8a25a;
+    color: white;
+    border: none;
+}
+.input-box{
+    position: relative;
+}
+.input-box .custom-input{
+    width: 100%;
+    padding-right: 40px;
+}
+.input-box img{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+    pointer-events: none;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Testimonials !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .testimonials{
     padding: 155px 0 245px;
+    overflow: hidden;
 }
 .testimonial-title{
     font-size: 45px;

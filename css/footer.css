@@ -32,6 +32,13 @@
 .footer-socials a{
     display: inline-block;
     transition: transform 0.3s ease;
+    height: 20px;
+    width: 31px;
+}
+.footer-socials img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .footer-socials a:hover{
     transform: scale(1.1);

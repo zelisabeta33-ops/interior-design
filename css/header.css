@@ -19,6 +19,10 @@
     height: 100%;
     object-fit: contain;
 }
+.phone-number{
+    padding-right: 15px;
+    text-align: right;
+}
 .phone-number .fa-solid{
     color: #7e7c79;
 }
@@ -82,4 +86,7 @@
 .arrow{
     font-size: 30px;
     padding-left: 5px;
+}
+.phone-number, .navbar{
+    width: 220px;
 }

@@ -155,14 +155,71 @@ ul, ol{
         padding: 15px 0 0 25px;
         gap: 30px;
     }
-    .work-number{
-        box-shadow: 
-        0 0 0 4px #fdfaf3,
-        0 0 0 5px rgba(253, 229, 209, 0.5),
-        0 0 0 9px #fdfaf3,
-        0 0 0 10px rgba(253, 229, 209, 0.8),
-        0 0 0 14px #fdfaf3,
-        0 0 0 15px rgba(253, 229, 209, 0.3);
+
+    .contact-bg{
+        position: relative;
+        padding: 60px 0;
+        background-image: url(../img/kitchen2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-img-bg{
+        display: none;
+    }
+    .contact-content{
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 5;
+    }
+    .contact-title{
+        font-size: 40px;
+    }
+    .contact-subtitle{
+        font-size: 22px;
+        margin: 50px 0 35px;
+    }
+    .custom-input::placeholder{
+        font-size: 19px;
+    }
+    .contact-subtitle.last{
+        margin: 15px 0;
+    }
+    .form-btn{
+        background-color: #f8a25a;
+        color: white;
+        border: none;
+        transition: all 0.3s ease;
+    }
+    .form-btn:hover{
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+    }
+
+    .testimonials{
+        padding: 195px 0 220px 20px;
+    }
+    .avatar-item:not(.avatar-item.active){
+        display: none;
+    }
+    .testimonial-block{
+        margin-top: 45px;
+    }
+    .testimonial-content{
+        max-width: 652px;
+        padding-right: 140px;
+    }
+    .testimonial-content .common-subtitle{
+        margin-top: 30px;
+    }
+    .testimonial-content .avatar-item{
+        right: -15%;
     }
 }
 
@@ -206,5 +263,101 @@ ul, ol{
 
     .work{
         padding: 120px 0;
+    }
+    .work-block{
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    .work-item{
+        padding: 0;
+        gap: 0;
+    }
+    .work-content .common-h3{
+        padding-bottom: 10px;
+    }
+    .work .common-title{
+        text-align: center;
+    }
+
+    .contact-bg{
+        padding: 110px 0;
+    }
+    .contact-content{
+        min-width: 280px;
+    }
+    .contact-title{
+        font-size: 30px;
+    }
+    .contact-subtitle{
+        font-size: 18px;
+        margin: 95px 0 0;
+    }
+    .input-box{
+        margin-top: 30px;
+    }
+    .input-box img{
+        display: none;
+    }
+
+    .testimonials{
+        padding: 150px 20px 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .testimonial-block{
+        margin-top: 80px;
+    }
+    .testimonial-content{
+        max-width: 295px;
+        padding: 180px 20px 55px;
+        margin: 0 auto;
+    }
+    .testimonial-content .common-subtitle{
+        margin-top: 25px;
+    }
+    .testimonial-content .common-h3{
+        margin-bottom: 0;
+    }
+    .testimonial-content span{
+        font-size: 18px;
+    }
+    .testimonial-content .avatar-item{
+        top: 8%;
+        right: 50px;
+    }
+
+    .footer{
+        padding: 95px 0;
+    }
+    .footer-item p{
+        font-size: 20px;
+        font-family: "Myriad Pro";
+    }
+    .footer-block{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-item.middle{
+        order: 1;
+        margin-bottom: 55px;
+    }
+    .footer-item{
+        order: 2;
+    }
+    .footer-socials{
+        gap: 60px;
+    }
+    .footer-socials a{
+        height: 25px;
+        width: 39px;
+    }
+    .footer-item:nth-child(3){
+        margin-top: 10px;
+    }
+    .footer-item:not(.footer-item.middle){
+        max-width: 100%;
     }
 }
