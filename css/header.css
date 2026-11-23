@@ -1,13 +1,16 @@
 .header{
     min-height: 770px;
 }
+.header-top{
+    background: linear-gradient(90deg,rgba(22, 35, 55, 0.93) 50%, rgba(247, 247, 244, 0) 0%);
+}
 .header-navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
     position: relative;
-    z-index: 10;
+    z-index: 3;
 }
 .navbar-toggler{
     border: none;
@@ -21,8 +24,9 @@
     background-repeat: no-repeat;
 }
 .navbar-nav{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 30px;
 }
 .phone-number{
@@ -59,7 +63,7 @@
 }
 .blue-block-content{
     position: relative;
-    padding: 280px 0 35px;
+    padding: 210px 0 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -117,4 +121,7 @@
 }
 .blue-block-content .socials{
     padding-top: 170px;
+}
+.header-bottom{
+    position: relative;
 }

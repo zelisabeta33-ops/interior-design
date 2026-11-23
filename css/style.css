@@ -1,5 +1,3 @@
-@import url(https://db.onlinewebfonts.com/c/9ff57e16737552a50301198eaae83cfb?family=MullerLight);
-@import url(https://db.onlinewebfonts.com/c/9ff57e16737552a50301198eaae83cfb?family=MullerLight);
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(./header.css);
 @import url(./main.css);
@@ -71,10 +69,24 @@ ul, ol{
         background-size: cover;
         min-height: 600px;
     }
+    .header-top{
+        background: none;
+    }
+    .header-bottom{
+        position: static;
+    }
     .logo{
         padding-left: 12px;
         order: 1;
         background-image: url(../img/logo2.png);
+        margin-right: 30px;
+    }
+    .navbar-toggler{
+        margin-inline-start: auto;
+    }
+    .navbar-nav{
+        gap: 15px;
+        justify-content: end;
     }
     .navbar{
         order: 2;
@@ -302,12 +314,21 @@ ul, ol{
     .testimonial-content .avatar-item{
         right: -15%;
     }
+
+    .footer-block{
+        gap: 40px;
+    }
 }
 
 @media (max-width: 576px){
     .site-grid{
         display: none;
     }
+
+    .navbar-nav{
+        gap: 5px 10px;
+    }
+
     .intro{
         grid-template-columns: 1fr;
         gap: 10px;
