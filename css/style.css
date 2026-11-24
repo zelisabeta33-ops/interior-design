@@ -17,6 +17,7 @@ body{
 header, main, footer{
     position: relative;
     z-index: 10;
+    overflow: hidden;
 }
 h1, h2{
     font-family: "EB Garamond", serif;
@@ -55,7 +56,6 @@ ul, ol{
     border-left: 1px solid rgba(71, 71, 71, 0.1);
     height: 100%;
 }
-
 
 
 @media (max-width: 768px){
@@ -306,7 +306,7 @@ ul, ol{
     }
     .testimonial-content{
         max-width: 652px;
-        padding-right: 140px;
+        padding-right: 180px;
     }
     .testimonial-content .common-subtitle{
         margin-top: 30px;
@@ -457,7 +457,7 @@ ul, ol{
     }
     .testimonial-content .avatar-item{
         top: 8%;
-        right: 50px;
+        right: 10px;
     }
 
     .footer{
