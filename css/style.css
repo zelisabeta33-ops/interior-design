@@ -74,6 +74,7 @@ ul, ol{
     }
     .header-bottom{
         position: static;
+        min-height: 0;
     }
     .logo{
         padding-left: 12px;
